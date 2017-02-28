@@ -1,0 +1,15 @@
+sf_co_voit_cms:
+    resource: "@SfCoVoitCmsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+sf_co_voit_front_office:
+    resource: "@SfCoVoitFrontOfficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+sf_co_voit_back_office:
+    resource: "@SfCoVoitBackOfficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+sf_co_voit_main:
+    resource: "@SfCoVoitMainBundle/Resources/config/routing.yml"
+    prefix:   /main

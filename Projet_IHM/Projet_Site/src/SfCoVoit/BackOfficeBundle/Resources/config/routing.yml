@@ -1,0 +1,3 @@
+sf_co_voit_back_office_homepage:
+    path:     /
+    defaults: { _controller: SfCoVoitBackOfficeBundle:Default:index }

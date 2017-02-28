@@ -1,0 +1,4 @@
+services:
+#    sf_co_voit_main.example:
+#        class: SfCoVoit\MainBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

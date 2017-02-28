@@ -1,0 +1,36 @@
+sf_covoit_main_home:
+    path:      /{page}
+    defaults: { _controller: SfCoVoitMainBundle:Advert:home, page: 1 }
+    requirements:
+        page: \d*
+
+sf_covoit_main_view:
+    path:      /advert/{id}
+    defaults:  { _controller: SfCoVoitMainBundle:Advert:view }
+    requirements:
+        id: \d+
+
+sf_covoit_main_add:
+    path:      /add
+    defaults:  { _controller: SfCoVoitMainBundle:Advert:add }
+
+sf_covoit_main_edit:
+    path:      /edit
+    defaults:  { _controller: SfCoVoitMainBundle:Advert:edit }
+    requirements:
+            id: \d+
+
+sf_covoit_main_delete:
+    path:      /delete
+    defaults:  { _controller: SfCoVoitMainBundle:Advert:delete }
+    requirements:
+            id: \d+
+
+sf_covoit_main_view_slug:
+    path: /{year}/{slug}.{_format}
+    defaults:
+        _controller: SfCoVoitMainBundle:Advert:viewslug
+        _format: html
+    requirements:
+        year:    \d{4}
+        _format:  html|xml
